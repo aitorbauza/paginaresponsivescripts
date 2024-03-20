@@ -1,0 +1,212 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Tipografía */
+}
+
+body { /* Estilos para el "body" de la página */
+    background: #122562; /* Color de fondo del body */
+    font-family: sans-serif; /* Tipografía del body */
+    margin: 1.25rem; /* Margen del body con el exterior */
+}
+
+.container { /* Estilos para el contenedor del formulario */
+    width: 25%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    border: 3px solid #d4aa36e2; /* Tamño del borde del contenedor, sólido y color del borde  */
+    padding: 3%; /* Relleno interno del contenedor */
+    background: white; /* Color de fondo del contenedor */
+}
+
+h1 { /* Estilos para el h1 */
+    text-align: center; /* Texto centrado */
+    text-decoration: underline; /* Texto subrayado */
+}
+
+label { /* Estilos para las etiquetas (label)*/
+    display: block; /* Hace que las etiquetas se muestren en bloque, una debajo de otra */
+    margin-bottom: 0.31rem; /* Margen inferior de las etiquetas */
+}
+
+input { /* Estilos para los inputs */
+    width: 97%; /* Ancho del campo de entrada, es decir, el rectangulo donde metes la información*/
+    padding: 0.31rem; /* Relleno interno del campo de entrada */
+    margin-bottom: 0.62rem; /* Margen inferior del campo de entrada */
+    border: 2px solid #d4aa36e2; /* Borde del campo de entrada, su tamaño, sólido y el color del borde */
+}
+
+button { /* Estilos para el botón que envía los datos del formulario*/
+    background-color: #000; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    width: 100%; /* Ancho del botón */
+    padding: 0.62rem; /* Relleno interno del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.opciones { /* Estilos para la clase opciones */
+    margin-top: 0.62rem; /* Margen superior de las opciones */
+    text-align: center; /* Texto centrado */
+}
+
+.opciones a { /* Estilos para los enlaces de la clase opciones */
+    text-decoration: none; /* Sin subrayado */
+    color: #000; /* Color del texto de los enlaces */
+    margin: 0 0.62rem; /* Margen entre enlaces */
+}
+
+.opciones a:hover { /* Estilos para el hover de los enlaces */
+    color: #d4aa36e2; /* Cambia el color del texto al pasar el ratón por encima */
+    text-decoration: underline; /* Subraya los enlaces al pasar el ratón por encima */
+}
+
+/*RESPONSIVE*/
+
+/* El responsive de los formularios se ha basado en ir reduciendo el tamaño de la letra y de la cajita de los inputs
+ y hemos ensanchado un poco más el contenedor del formulario porque cuando se iba estrechando, el formulario quedaba muy oprimido, es decir,
+ se quedaba como aplastado, enntonces al aumentar un poco su anchura, se hacia más estético. */
+ @media (max-width: 1200px){
+    .container{
+        width: 41%;
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+
+    .opciones{
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 900px){
+    .container{
+        width: 41%;
+        padding: 4%; 
+    }
+}
+
+@media (max-width: 700px){
+    h1{
+        font-size: 1.5rem;
+    }
+    input{
+        width: 95%;
+        padding: 0.25rem;
+    }
+}
+
+@media (max-width: 550px){
+    h1{
+        font-size: 1.4rem;
+    }
+    .container{
+        width: 39%;
+        padding: 7%;
+    }
+    .opciones{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 465px){
+    h1{
+        font-size: 1.25rem;
+    }
+    .container{
+        width: 38%;
+        padding: 7%; 
+    }
+    .opciones{
+        font-size: 0.85rem;
+    }
+    input{
+        width: 93%;
+        padding: 0.2rem;
+    }
+}
+
+@media (max-width: 420px){
+    h1{
+        font-size: 1.15rem;
+    }
+    .container{
+        width: 37%;
+        padding: 6%;
+    }
+    .opciones{
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 395px){
+    h1{
+        font-size: 0.98rem;
+    }
+    .container{
+        width: 36%;
+        padding: 5%; 
+    }
+    .opciones{
+        font-size: 0.65rem;
+    }
+    label{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 370px){
+    h1{
+        font-size: 0.85rem;
+    }
+    .container{
+        width: 35%;
+        padding: 5%; /* Relleno interno del contenedor */
+    }
+    .opciones{
+        font-size: 0.55rem;
+    }
+    label{
+        font-size: 0.75rem;
+    }
+    input{
+        width: 90%;
+        padding: 0.15rem;
+    }
+}
+
+@media (max-width: 325px){
+    h1{
+        font-size: 0.75rem;
+    }
+    .container{
+        width: 34%;
+        padding: 5%; /* Relleno interno del contenedor */
+    }
+    .opciones{
+        font-size: 0.45rem;
+    }
+    label{
+        font-size: 0.65rem;
+    }
+    button{
+        padding: 5.5%;
+    }
+}
+
+@media (max-width: 300px){
+    h1{
+        font-size: 0.7rem;
+    }
+    .container{
+        width: 34%;
+        padding: 5%; /* Relleno interno del contenedor */
+    }
+    .opciones{
+        font-size: 0.4rem;
+    }
+    label{
+        font-size: 0.6rem;
+    }
+    button{
+        padding: 2.3%;
+    }
+}

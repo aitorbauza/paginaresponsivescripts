@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puntuación de la pagina web</title>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/puntuacion.css'>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="JS/js.js"></script>
+
+</head>
+<body>
+
+    <header id="encabezado">
+        <a href="index.html"><img class="escudo" src="media/escudo barcelona.png" alt="escudo del Barcelona"></a>
+    </header>
+    
+    <main>
+        <div class="contenido">
+            <h3>Califica con una nota la página WEB</h3>
+            <form action="#" id="formulario" onsubmit="agregarOpinion(); return false;">
+                <div class="nota">
+                    <input type="number" id="notaestrellas" name="nota" hidden>
+                    <i class='bx bx-star estrella'></i>
+                    <i class='bx bx-star estrella'></i>
+                    <i class='bx bx-star estrella'></i>
+                    <i class='bx bx-star estrella'></i>
+                    <i class='bx bx-star estrella'></i>
+                </div>
+                <textarea id="opinion" name="opinion" cols="30" rows="5" placeholder="Escribe tu opinión"></textarea>
+                <div class="btn-group">
+                    <button type="submit" class="btn submit">Envía</button>
+                    <button class="btn cancel"><a href="index.html" id="cancelar">Cancela</a></button>
+                </div>
+            </form>
+    
+            <div id="informacion"></div>
+        </div>
+    </main>
+    
+    <script>
+        const todasEstrellas = document.querySelectorAll('.nota .estrella');
+        const notapuesta = document.querySelector(' .nota input');
+    
+        todasEstrellas.forEach((item, idx) => {
+            item.addEventListener('click', function() {
+                todasEstrellas.forEach(i => {
+                    i.classList.replace('bxs-star', 'bx-star');
+                });
+                for (let i = 0; i < todasEstrellas.length; i++) {
+                    if (i <= idx) {
+                        todasEstrellas[i].classList.replace('bx-star', 'bxs-star');
+                    } 
+                }
+                notapuesta.value = idx + 1; // Asigna la nota seleccionada al input oculto
+            });
+        });
+        
+    </script>
+    
+    </body>
+    </html>
+</html>

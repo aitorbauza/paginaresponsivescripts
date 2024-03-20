@@ -1,0 +1,456 @@
+*{ /* Establece el fondo de toda la página web de este color */
+    background: #122562;
+}
+
+header{ /* Estilos para el "header" */
+    text-align: center; /* Texto centrado */
+    border-bottom: 3px solid black; /* Borde inferior sólido de 3 píxeles de tamaño */
+    width: 100%; /* Ancho del "header" */
+}
+
+.img-s{ /* Estilos para el escudo superior a la izquierda */
+    width: 5.93rem; /* Ancho del escudo */
+    height: 4.37rem; /* Alto del escudo */
+    flex-grow: 0; /* Evitar que el escudo crezca */
+    border: none; /* Sin borde */
+    background-color: transparent; /* Fondo transparente */
+    float: left; /* El escude permanence en la izquierda */
+}
+
+h1{ /* Estilos para los encabezados */
+    color: #fdc52c; /* Color del texto */
+    position: relative; /* Posición relativa para que su posición no moleste al resto del "header" */
+    text-align: center; /* Texto centrado */
+    padding-top: 0.93rem; /* Espaciado superior de 15 píxeles */
+    text-decoration: underline; /* El texto está subrayado */
+}
+
+#ubi{
+    position: absolute; /* Haced que no colapse con el resto de los elementos del header */
+    right: 6%; /* Ajuste de la distancia desde el borde derecho */
+    text-decoration: none; /* Sin que esté subrayado, ya que al ser un enlace se subraya solo*/
+    font-size: 1.56rem; /* Tamaño de la letra */
+    color:antiquewhite; /* Color del texto */
+    padding-top: 0.2%; /* Espaciado superior */
+}
+
+#ubi:hover{ /* Estilos para el hover del enlace de ubicación */
+    transition: 0.3s; /* Tiempo que tarde en hacer el hover */
+    transform: scale(1.3); /* Escala aumentada del texto */
+    color: rgb(205, 194, 179); /* Color del texto cambiado */
+}
+
+#campo{ /* Estilos para la imagen del campo */
+    border: 3px solid black; /* Borde sólido negro de 3 píxeles de tamaño */
+    border-top: none; /* Sin borde superior */
+    width: 65rem; /* Ancho de la imagen */
+    height: 33.5rem; /* Alto de la imagen */
+    text-align: center; /* Texto centrado */
+}
+
+main{ /* Estilos para el main */
+    float: left; /* Todo lo que esté en el main está a la izquierda */
+    width: 70%; /* Ancho del main */
+    position: absolute; /* Hace que el campo no colapse con el aside */
+}
+
+.clearfix{
+    clear: both; /* Esto hace que el aside y su contenido esté bien colocado */
+}
+
+aside{ /* Estilos para el aside */
+    width: 30%; /* Ancho del aside */
+    color: #d4aa36e2; /* Color del texto */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Tipografía */
+    font-size: 1.56rem; /* Tamaño de la letra */
+    position: absolute; /* Posición absoluta */
+    right: 0%; /* Ajuste de la distancia desde el borde derecho */
+}
+
+
+p{ /* Estilo para los párrafos */
+    width: 100%; /* Hace que ocupe el 100% del aside */
+}
+
+footer { /* Estilos para el "footer" */
+    background-color: #122562; /* Color de fondo del footer */
+    color: #fff; /* Color del texto del footer */
+    padding: 1.56rem 0; /* Relleno del footer */
+    position: fixed; /* Posición fija */
+    bottom: 0; /* Lo mantiene en la parte inferior */
+    width: 100%; /* Ancho */
+}
+
+footer a { /* Estilos para los enlaces del "footer" */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin que esté subrayado, ya que al ser un enlace se subraya solo*/
+    float: right; /* El enlace está a la derecha */
+    padding-right: 10%; /* Separación de un 10% a partir del borde derecho */
+}
+
+footer a:hover { /* Estilos para el enlace de "inicio" en el footer */
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    transition: 0.3s; /* Tiempo que tarde en hacer el hover */
+    transform: scale(1.3); /* Escala aumentada del texto */
+}
+
+button { /* Estilos para el botón */
+    background-color: #0f66e0e7; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 0.93rem 1.56rem; /* Relleno del botón */
+    font-size: 0.87rem; /* Tamaño de letra */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    display: flex; /* Crea un contenedor donde el botón adquiere una mayor felixibildad y adaptabilidad a diferentes espacios */
+    justify-content: center; /* Contenido centrado */
+    margin: 5rem auto 0 auto; /* Margen con el texto del aside */
+    margin-left: 0.18rem; /* Margen izquierdo con el main */
+}
+
+
+button:hover { /* Estilos para el hover del botón */
+    background-color: #1d007e; /* Color del hover */
+    transition: 0.3s; /* Tiempo que tarda en hacer el hover */
+}
+
+/*CCS RESPONSIVE CAMPO*/
+
+/* En este responsive, se le ha disminuido el tamaño a todo de forma proporcional intentando que sea
+los más adaptable y legible posible a cualquier plataforma */
+@media(max-width: 1520px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 61rem; /* Ancho de la imagen */
+        height: 30rem; /* Alto de la imagen */
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 5.7rem; /* Ancho del escudo */
+        height: 4.2rem; /* Alto del escudo */
+    }
+    #ubi{
+        font-size: 1.3rem; /* Tamaño de la letra */
+    }
+    button { /* Estilos para el botón */
+        padding: 0.8rem 1.4rem; /* Relleno del botón */
+        font-size: 0.8rem; /* Tamaño de letra */
+        margin: 2rem auto 0 auto; /* Margen con el texto del aside */
+    }
+    aside{ /* Estilos para el aside */
+        font-size: 1.4rem; /* Tamaño de la letra */
+    }
+}
+
+@media(max-width: 1440px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 57.5rem; /* Ancho de la imagen */
+        height: 30rem; /* Alto de la imagen */
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 5rem; /* Ancho del escudo */
+        height: 3rem; /* Alto del escudo */
+    }
+    #ubi{
+        font-size: 1.1rem; /* Tamaño de la letra */
+    }
+    button { /* Estilos para el botón */
+        padding: 0.8rem 1.2rem; /* Relleno del botón */
+        font-size: 0.7rem; /* Tamaño de letra */
+        margin: 2rem auto 0 auto; /* Margen con el texto del aside */
+    }
+    aside{ /* Estilos para el aside */
+        font-size: 1.2rem; /* Tamaño de la letra */
+    }
+}
+
+@media(max-width: 1350px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 54rem; /* Ancho de la imagen */
+        height: 30rem; /* Alto de la imagen */
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 4.6rem; /* Ancho del escudo */
+        height: 2.7rem; /* Alto del escudo */
+    }
+    #ubi{
+        font-size: 1rem; /* Tamaño de la letra */
+    }
+    button { /* Estilos para el botón */
+        padding: 0.7rem 1rem; /* Relleno del botón */
+        font-size: 0.6rem; /* Tamaño de letra */
+        margin: 2rem auto 0 auto; /* Margen con el texto del aside */
+    }
+    aside{ /* Estilos para el aside */
+        font-size: 1rem; /* Tamaño de la letra */
+    }
+}
+
+@media(max-width: 1280px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 51rem; /* Ancho de la imagen */
+        height: 30rem; /* Alto de la imagen */
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 4.3rem; /* Ancho del escudo */
+        height: 2.4rem; /* Alto del escudo */
+    }
+    #ubi{
+        font-size: 0.9rem; /* Tamaño de la letra */
+    }
+    button { /* Estilos para el botón */
+        padding: 0.6rem 0.85rem; /* Relleno del botón */
+        font-size: 0.55rem; /* Tamaño de letra */
+        margin: 2rem auto 0 auto; /* Margen con el texto del aside */
+    }
+    aside{ /* Estilos para el aside */
+        font-size: 1rem; /* Tamaño de la letra */
+    }
+}
+
+@media(max-width: 1195px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 47rem; /* Ancho de la imagen */
+        height: 29rem; /* Alto de la imagen */
+    }
+}
+
+@media(max-width: 1105px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 43.5rem; /* Ancho de la imagen */
+        height: 29rem; /* Alto de la imagen */
+    }
+}
+
+@media(max-width: 1025px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 40rem; /* Ancho de la imagen */
+        height: 29rem; /* Alto de la imagen */
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 3.8rem; /* Ancho del escudo */
+        height: 2rem; /* Alto del escudo */
+    }
+    footer{
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 950px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 36rem; /* Ancho de la imagen */
+        height: 27rem; /* Alto de la imagen */
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 3.6rem; /* Ancho del escudo */
+        height: 2rem; /* Alto del escudo */
+    }
+    button { /* Estilos para el botón */
+    padding: 0.5rem 0.75rem; /* Relleno del botón */
+    font-size: 0.45rem; /* Tamaño de letra */
+    margin: 2rem auto 0 auto; /* Margen con el texto del aside */
+    }
+    aside{ /* Estilos para el aside */
+    font-size: 0.85rem; /* Tamaño de la letra */
+    }
+}
+
+@media(max-width: 850px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 31rem; /* Ancho de la imagen */
+        height: 24rem; /* Alto de la imagen */
+    }
+    h1{
+        font-size: 1rem;
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 3.4rem; /* Ancho del escudo */
+        height: 1.8rem; /* Alto del escudo */
+    }
+    #ubi{
+        font-size: 0.85rem; /* Tamaño de la letra */
+    }
+    button { /* Estilos para el botón */
+        padding: 0.45rem 0.7rem; /* Relleno del botón */
+        font-size: 0.4rem; /* Tamaño de letra */
+        margin: 2rem auto 0 auto; /* Margen con el texto del aside */
+    }
+    aside{ /* Estilos para el aside */
+        font-size: 0.8rem; /* Tamaño de la letra */
+    }
+}
+
+@media(max-width: 760px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 26rem; /* Ancho de la imagen */
+        height: 23rem; /* Alto de la imagen */
+    }
+    h1{
+        font-size: 1rem;
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 3.2rem; /* Ancho del escudo */
+        height: 1.6rem; /* Alto del escudo */
+    }
+    #ubi{
+        font-size: 0.75rem; /* Tamaño de la letra */
+    }
+    footer{
+        font-size: 0.6rem;
+    }
+}
+
+
+@media(max-width: 680px){
+    header{
+        border-bottom: 2px solid black; 
+    }
+    #campo{ /* Estilos para la imagen del campo */
+        width: 22rem; /* Ancho de la imagen */
+        height: 16.5rem; /* Alto de la imagen */
+        border: 2px solid black;
+    }
+    h1{
+        font-size: 0.75rem;
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 2.8rem; /* Ancho del escudo */
+        height: 1.7rem; /* Alto del escudo */
+    }
+    #ubi{
+        font-size: 0.60rem; /* Tamaño de la letra */
+    }
+    button { /* Estilos para el botón */
+        padding: 0.35rem 0.5rem; /* Relleno del botón */
+        font-size: 0.3rem; /* Tamaño de letra */
+        margin: 2rem auto 0 auto; /* Margen con el texto del aside */
+    }
+    aside{ /* Estilos para el aside */
+        font-size: 0.6rem; /* Tamaño de la letra */
+    }
+}
+
+@media(max-width: 530px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 19rem; /* Ancho de la imagen */
+        height: 14.5rem; /* Alto de la imagen */
+    }
+    h1{
+        font-size: 0.7rem;
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 2.6rem; /* Ancho del escudo */
+        height: 1.6rem; /* Alto del escudo */
+    }
+    #ubi{
+        font-size: 0.55rem; /* Tamaño de la letra */
+    }
+    button { /* Estilos para el botón */
+        padding: 0.35rem 0.35rem; /* Relleno del botón */
+        font-size: 0.25rem; /* Tamaño de letra */
+        margin: 2rem auto 0 auto; /* Margen con el texto del aside */
+    }
+    aside{ /* Estilos para el aside */
+        font-size: 0.6rem; /* Tamaño de la letra */
+    }
+    footer{
+        font-size: 0.5rem;
+    }
+}
+
+@media(max-width: 470px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 16rem; /* Ancho de la imagen */
+        height: 12.5rem; /* Alto de la imagen */
+    }
+    h1{
+        font-size: 0.6rem;
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 2.2rem; /* Ancho del escudo */
+        height: 1.3rem; /* Alto del escudo */
+    }
+    #ubi{
+        font-size: 0.45rem; /* Tamaño de la letra */
+    }
+    button { /* Estilos para el botón */
+        padding: 0.3rem 0.3rem; /* Relleno del botón */
+        font-size: 0.25rem; /* Tamaño de letra */
+        margin: 1.5rem auto 0 auto; /* Margen con el texto del aside */
+    }
+    aside{ /* Estilos para el aside */
+        font-size: 0.5rem; /* Tamaño de la letra */
+    }
+    footer{
+        font-size: 0.45rem;
+    }
+}
+
+@media(max-width: 400px){
+    header{
+        border-bottom: 1px solid black; 
+    }
+    #campo{ /* Estilos para la imagen del campo */
+        width: 13rem; /* Ancho de la imagen */
+        height: 10.5rem; /* Alto de la imagen */
+        border: 1px solid black; 
+    }
+    h1{
+        font-size: 0.5rem;
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 2rem; /* Ancho del escudo */
+        height: 1rem; /* Alto del escudo */
+    }
+    #ubi{
+        font-size: 0.35rem; /* Tamaño de la letra */
+    }
+    button { /* Estilos para el botón */
+        padding: 0.3rem 0.2rem; /* Relleno del botón */
+        font-size: 0.20rem; /* Tamaño de letra */
+        margin: 1.5rem auto 0 auto; /* Margen con el texto del aside */
+    }
+    aside{ /* Estilos para el aside */
+        font-size: 0.45rem; /* Tamaño de la letra */
+    }
+    footer{
+        font-size: 0.4rem;
+    }
+}
+
+@media(max-width: 325px){
+    #campo{ /* Estilos para la imagen del campo */
+        width: 10rem; /* Ancho de la imagen */
+        height: 8.5rem; /* Alto de la imagen */
+    }
+    h1{
+        font-size: 0.4rem;
+    }
+    .img-s{ /* Estilos para el escudo superior a la izquierda */
+        width: 1.6rem; /* Ancho del escudo */
+        height: 0.8rem; /* Alto del escudo */
+    }
+    #ubi{
+        font-size: 0.3rem; /* Tamaño de la letra */
+    }
+    button { /* Estilos para el botón */
+        padding: 0.3rem 0.17rem; /* Relleno del botón */
+        font-size: 0.17rem; /* Tamaño de letra */
+        margin: 1rem auto 0 auto; /* Margen con el texto del aside */
+    }
+    aside{ /* Estilos para el aside */
+        font-size: 0.4rem; /* Tamaño de la letra */
+    }
+    footer{
+        font-size: 0.3rem;
+    }
+}

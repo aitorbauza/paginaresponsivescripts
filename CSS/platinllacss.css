@@ -1,0 +1,81 @@
+body{
+    background-color: #122562;
+    font-family: monospace, sans-serif;
+}
+
+/*escudo superior a la izquierda*/
+.img-s{
+    width: 95px;
+    height: 70px;
+    flex-grow: 0;
+    border: none;
+    background-color: transparent;
+}
+/*entrenador principal*/
+#entrenadorp{
+    color: gold;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+/*entrenador secundario. id diferentes entre entrenadores para arreglar la perspectiva del tamaño de la letra en cuanto
+a la extensión del titulo*/
+#entrenadors{
+    color: gold;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: 10px;  
+}
+
+.dorsál{
+    color: gold;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pais{
+    color: gray;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(57, 57, 229);
+    border: 3px solid #AB2A3E;
+}
+
+/*para mantener que empiezen los div siempre comenzando la izquierda*/
+div{
+    float: left;
+}
+
+/*para que el salgo se ejecute independientemente del
+lado del que provenga. Aunque en este caso solo se necesita
+de lado izquierdo puede que en un futuro se necesitase
+de elementos flotantes a la derech*/
+.clearfix{
+    clear: both;
+}
+
+p{
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.titulo{
+    text-align: center;
+    color: #fdc52c;
+    font-size: 50px;
+    border-bottom: none;
+}
+
+h1{
+    border-bottom: solid black;
+    text-align: center;
+}

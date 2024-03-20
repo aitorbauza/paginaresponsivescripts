@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>RESPONSIVE</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/B2.css'>
+    <script src="JS/js.js"></script>
+    
+    <link rel="icon" type="image.png" href="media/escudo barcelona.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    
+    <header>
+        <!--Icono del equipo que a su vez funciona como link al index-->
+        <div>
+            <a href="index.html"><img class="img-s" src="media/escudo barcelona.png" alt="escudo del Barcelona"></a>
+        </div>
+
+        <!--Toggle Switch que cuando se activa, cambia el fondo de la página principal-->
+        <div class="toggle-switch">
+            <input type="checkbox" id="switch" class="toggle-switch-checkbox">
+            <label for="switch" class="toggle-switch-label"></label>
+          </div>
+
+        <!--Navegador central de la página-->
+        <nav class="nav-s">
+            <ul class="hover">
+                <li><a href="Plantilla.html">Plantilla</a></li>
+                <li><a href="Palmarés.html">Palmarés</a></li>
+                <li><a href="Estadio_Camp.html">Camp Nou</a></li>
+                <li><a href="Estadio_Olimpico.html">Lluis Companys</a></li>
+            
+            </ul>
+        </nav>
+        
+        <div class="button-container"> <!-- Contenedor de botones -->
+            <!-- Botón para iniciar sesión -->
+            <button onclick="redirectToLogin()">👤 Iniciar Sesión</button>
+            <!-- Botón para registrarse -->
+            <button onclick="registro()">👤 Registrarse</button>
+        </div>             
+        
+        <!--Navegador de redes sociales del club con su link. Se pueden agregar y quitar 2 redes sociales-->
+        
+    </header>
+
+    <!--Contenido principal de la página-->
+    <main>
+
+        <section>
+
+            <h2 class="titulo"> FUTBOL CLUB</h2>
+            <h2 class="barcelona"><span style="color: blue;">BARC</span style="color: red"><span style="color: red;">ELONA</span> </h2>
+            
+            <!--Link para la compra de entradas-->
+            <div style="padding-top: 10%; align-items: center;">
+                <div class="caja">
+                    <button id="entradas"> <a href="https://www.fcbarcelona.es/es/entradas/futbol" target="_blank">
+                    COMPRAR ENTRADAS
+                    </a>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Video de fondo -->
+            <div class="video">
+                <video id="video-background" autoplay loop preload=auto muted src="media/Video Fondo fcb.mp4" type="video/mp4"></video>
+            </div>
+            
+
+        </section>
+            
+
+        <!--había intención de añadir más contenido en INDEX.html pero consideramos que
+        la estética era mejor así y añadir contenido con más webs. De ahí un main con solo 1 section-->
+       
+    </main>
+    </div>
+    <footer>
+        <div id="cookie-banner">
+            <p>Este sitio web utiliza cookies para mejorar la experiencia del usuario.</p>
+            <button id="boton_a" onclick="aceptarCookies()">Aceptar</button>
+            <button id="boton_r" onclick="rechazarCookies()">Rechazar</button>
+        </div>
+        <div class="redes">
+        
+            <a href="https://www.facebook.com/fcbarcelona/?locale=es_ES" target="_blank" style="padding-left: 10px;"> <img src="media/facebook.png" alt="Facebook" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/fcbarcelona/" target="_blank" style="padding-left: 10px;"> <img src="media/instagram.png" alt="instagram" width="30px" height="30px" ></a>
+            <a href="https://twitter.com/FCBarcelona_es?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" style="padding-left: 10px;"> <img src="media/twitter.png" alt="Twitter" width="30px" height="30px"></a>
+
+        </div>
+
+
+
+        <a href="puntuacion.html" class="puntuacion">DANOS TU OPINION SOBRE LA PÁGINA </a>
+
+       <p class="copy"> &copy; Copyright FC Barcelona 2024. Todos los derechos reservados.</p> <!-- Texto de copyright -->
+    </footer>
+    <script>
+
+    var videoBackground = document.getElementById('video-background'); // Obtener el elemento del video
+    var toggleSwitch = document.getElementById('switch'); // Obtener el elemento del interruptor
+
+    toggleSwitch.addEventListener('change', function() {
+        if (this.checked) { // Si el interruptor está activado
+            videoBackground.style.display = 'none'; // Oculta el video
+            document.body.style.backgroundColor = "#122562"; // y cambia el color de fondo del cuerpo
+        } else { // Si el interruptor está desactivado
+            videoBackground.style.display = 'block'; // Muestra el video
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    box-sizing: border-box;
+    outline:none
+}
+
+
+body{
+    background-color:blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#encabezado{
+    padding: 0.600rem 0.300rem; /* 10px 6px */
+    max-width: 100%;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    align-items: center;
+    position: absolute;
+}
+
+.escudo {
+    width: 5.93rem; /* 95px */
+    height: 4.37rem; /* 70px */
+    flex-grow: 0;
+}
+
+.contenido{
+    background-color: rgb(155, 155, 155);
+    border: 3px solid #d4aa36e2;
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: 5px -5px rgb(83, 83, 83);
+}
+
+.contenido h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+
+.nota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-size: 2rem;
+    color: yellow;
+    margin-bottom: 2rem;
+
+}
+
+.nota .estrella{
+    cursor: pointer;
+}
+
+
+
+
+.nota .estrella:hover{
+    color: lightyellow;
+}
+
+textarea{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-bottom: .5rem;
+}
+
+.btn-group{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    
+    
+}
+
+.btn-group .btn{
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .900rem;
+    font-weight: 500;
+    
+}
+
+.btn-group .btn.submit{
+    background-color: rgb(227, 238, 242);
+    color: rgb(0, 0, 0);
+}
+
+.btn-group .btn.submit:hover{
+    background-color: rgb(28, 27, 27);
+    color: white;
+}
+
+.btn-group .btn.cancel{
+    background-color: rgb(155, 155, 155);
+}
+
+.btn-group .btn.cancel:hover{
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+#cancelar{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}

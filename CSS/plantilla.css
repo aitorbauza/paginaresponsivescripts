@@ -1,0 +1,391 @@
+body{ /* Estilos para el fondo y la fuente */
+  background-color: #122562; /* Color de fondo */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Tipografía */
+}
+
+.img-s{ /* Estilos para el escudo superior a la izquierda */
+  width: 5.93rem; /* Ancho del escudo */
+  height: 4.37rem; /* Alto del escudo */
+  flex-grow: 0; /* Evitar que el escudo crezca */
+  border: none; /* Sin borde */
+  background-color: transparent; /* Fondo transparente */
+}
+
+#entrenadorp{ /* Estilos para el nombre del entrenador principal */
+  color: gold; /* Color del texto*/
+  font-size: 2.5rem; /* Tamaño de fuente */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Tipografía */
+  text-align: center; /* Texto centrado */
+  margin-top: 0.62rem; /* Margen superior */
+}
+
+#entrenadors{ /* Estilos para el nombre del entrenador secundario */
+  color: gold; /* Color del texto */
+  font-size: 2.4rem; /* Tamaño de fuente */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Tipografía */
+  text-align: center; /* Texto centrado */
+  margin-top: 0.62rem; /* Margen superior */
+}
+
+.dorsál{ /* Estilos para el texto "dorsál" */
+  color: gold; /* Color del texto */
+  font-size: 2.5rem; /* Tamaño de fuente */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Tipografía */
+  text-align: center; /* Texto centrado */
+  margin-top: 0.62rem; /* Margen superior */
+}
+
+.pais{ /* Estilo para el texto "país" */
+  color: #f8f8f8; /* Color del texto */
+  text-decoration: underline; /* Texto subrayado */
+}
+
+img{ /* Estilos para las imágenes */
+  width: 25rem; /* Ancho de la imagen */
+  height: 25rem; /* Alto de la imagen */
+  background-color: rgb(57, 57, 229); /* Color del fondo de la imagen */
+  border: 0.18rem solid #AB2A3E; /* Tamaño del borde, tipo de borde y el color de este */
+}
+
+div{ /* Estilos para los div */
+  float: left; /* Coloca a los div flotando a la izquierda */
+}
+
+.clearfix{
+  clear: both; /* Esto hace que los <h1> (cuerpo técnico, porteros...) se situén encima de sus respectivas posiciones */
+}
+
+p { /* Estilos para los párrafos */
+  text-align: center; /* Texto centrado */
+  display: flex; /* Crea un contenedor donde los elementos dentro de este adquieren una mayor felixibildad y adaptabilidad a diferentes espacios */
+  flex-direction: column; /* Hace que los párrafos se pongan en columna */
+  font-size: 1.37rem; /* Tamaño de fuente */
+}
+
+.titulo{ /* Estilos para el título superior (PLANTILLA TEMPORADA 23/24) */
+  text-align: center; /* Texto centrado */
+  color: #fdc52c; /* Color del texto */
+  font-size: 3.12rem; /* Tamaño de fuente */
+  border-bottom: none; /* Sin borde inferior, ya que todos los <h1> tienen un borde inferior a este se le aplica "none" para que desaparezca el borde */
+}
+
+h1{ /* Estilos para los encabezados */
+  border-bottom: solid black; /* Borde inferior sólido y de color negro */
+  text-align: center; /* Texto centrado */
+}
+
+#contenedor { /* Estilos para el contenedor del botón */
+  display: flex; /* Crea un contenedor donde los elementos dentro de este adquieren una mayor felixibildad y adaptabilidad a diferentes espacios */
+  justify-content: center; /* Contenido centrado */
+  align-items: center; /* Centrar el botón */
+  float: none; /* Inválida el "float: left" para que este div no se pegue a la izquierda */
+}
+
+/* ESTILOS PARA EL SCRIPT */
+
+button { /* Estilos para el botón */
+  padding: 0.93rem 1.87rem; /* Relleno del botón (ancho y largo)*/
+  background-color: #b1b1b1dc; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Radio del borde, hace que las esquinas sean curvadas */
+}
+
+button:hover {
+  background-color: #c2cde8c3; /* Cambia el color del fondo del botón al pasar el cursor por encima del botón */
+}
+
+#imagen { /* Estilos para la imagen */
+  display: none; /* Oculta la imagen hasta que el botón se clique */
+  margin-left: 18%; /* Margen izquierdo */
+  width: 80%; /* Ancho de la imagen */
+  height: 85%; /* Alto de la imagen */
+  margin-top: 0.5%; /* Margen superior entre el botón y la imagen */
+  border: none; /* Sin borde */
+}
+
+
+/* RESPONSIVE CSS PLANTILLA */
+
+/* Se he reducido el tamaño de toda la página web, desde el escudo y el título, hasta las imagenes y párrafos
+informativos de los componentes de la plantilla y también la imagen que aparece y desaparece*/
+@media (max-width: 1050px){
+  #imagen { /* Estilos para la imagen */
+    width: 75%; /* Ancho de la imagen */
+    height: 80%; /* Alto de la imagen */
+  }
+}
+
+@media (max-width: 870px){
+  .titulo{
+    font-size: 2.6rem;
+  }
+  img{
+  width: 21rem; /* Ancho de la imagen */
+  height: 21rem; /* Alto de la imagen */
+  }
+  #imagen { /* Estilos para la imagen */
+    margin-left: 15%; /* Margen izquierdo */
+    width: 70%; /* Ancho de la imagen */
+    height: 75%; /* Alto de la imagen */
+  }
+}
+
+@media (max-width: 740px){
+  .titulo{
+    font-size: 1.95rem;
+  }
+  img{
+  width: 16rem; /* Ancho de la imagen */
+  height: 16rem; /* Alto de la imagen */
+  }
+  .img-s{ /* Estilos para el escudo superior a la izquierda */
+    width: 5rem; /* Ancho del escudo */
+    height: 3.8rem; /* Alto del escudo */
+  }
+  #entrenadorp{ /* Estilos para el nombre del entrenador principal */
+    font-size: 2rem;
+  }
+  #entrenadors{ /* Estilos para el nombre del entrenador secundario */
+    font-size: 1.95rem;
+  }
+  .dorsál{ /* Estilos para el texto "dorsál" */
+    font-size: 2rem;
+  }
+  p { /* Estilos para los párrafos */
+    font-size: 1.17rem;
+  }
+  h1{ /* Estilos para los encabezados */
+    font-size: 1.6rem;
+  }
+  button {
+    padding: 0.8rem 1.7rem;
+    font-size: 0.8rem;
+  }
+  #imagen { /* Estilos para la imagen */
+    margin-left: 15%; /* Margen izquierdo */
+    width: 65%; /* Ancho de la imagen */
+    height: 65%; /* Alto de la imagen */
+  }
+}
+
+@media (max-width: 570px){
+  .titulo{
+    font-size: 1.8rem;
+  }
+  img{
+  width: 15rem; /* Ancho de la imagen */
+  height: 15rem; /* Alto de la imagen */
+  }
+  .img-s{ /* Estilos para el escudo superior a la izquierda */
+    width: 4rem; /* Ancho del escudo */
+    height: 3rem; /* Alto del escudo */
+  }
+  #entrenadorp{ /* Estilos para el nombre del entrenador principal */
+    font-size: 1.8rem;
+  }
+  #entrenadors{ /* Estilos para el nombre del entrenador secundario */
+    font-size: 1.75rem;
+  }
+  .dorsál{ /* Estilos para el texto "dorsál" */
+    font-size: 1.8rem;
+  }
+  p { /* Estilos para los párrafos */
+    font-size: 1.14rem;
+  }
+  h1{ /* Estilos para los encabezados */
+    font-size: 1.5rem;
+  }
+  button {
+    padding: 0.7rem 1.6rem;
+    font-size: 0.75rem;
+  }
+  #imagen { /* Estilos para la imagen */
+    margin-left: 19%; /* Margen izquierdo */
+    width: 60%; /* Ancho de la imagen */
+    height: 55%; /* Alto de la imagen */
+  }
+}
+
+@media (max-width: 540px){
+  .titulo{
+    font-size: 1.5rem;
+  }
+  img{
+  width: 13rem; /* Ancho de la imagen */
+  height: 13rem; /* Alto de la imagen */
+  }
+  .img-s{ /* Estilos para el escudo superior a la izquierda */
+    width: 3.3rem; /* Ancho del escudo */
+    height: 2.3rem; /* Alto del escudo */
+  }
+  #entrenadorp{ /* Estilos para el nombre del entrenador principal */
+    font-size: 1.5rem;
+  }
+  #entrenadors{ /* Estilos para el nombre del entrenador secundario */
+    font-size: 1.45rem;
+  }
+  .dorsál{ /* Estilos para el texto "dorsál" */
+    font-size: 1.5rem;
+  }
+  p { /* Estilos para los párrafos */
+    font-size: 0.9rem;
+  }
+  h1{ /* Estilos para los encabezados */
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 455px){
+  .titulo{
+    font-size: 1.3rem;
+  }
+  img{
+  width: 11rem; /* Ancho de la imagen */
+  height: 11rem; /* Alto de la imagen */
+  }
+  .img-s{ /* Estilos para el escudo superior a la izquierda */
+    width: 3.1rem; /* Ancho del escudo */
+    height: 2.1rem; /* Alto del escudo */
+  }
+  #entrenadorp{ /* Estilos para el nombre del entrenador principal */
+    font-size: 1.3rem;
+  }
+  #entrenadors{ /* Estilos para el nombre del entrenador secundario */
+    font-size: 1.25rem;
+  }
+  .dorsál{ /* Estilos para el texto "dorsál" */
+    font-size: 1.3rem;
+  }
+  p { /* Estilos para los párrafos */
+    font-size: 0.8rem;
+  }
+  h1{ /* Estilos para los encabezados */
+    font-size: 0.9rem;
+  }
+  button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.65rem;
+  }
+  #imagen { /* Estilos para la imagen */
+    margin-left: 20%; /* Margen izquierdo */
+    width: 58%; /* Ancho de la imagen */
+    height: 45%; /* Alto de la imagen */
+  }
+}
+
+@media (max-width: 395px){
+  .titulo{
+    font-size: 1.1rem;
+  }
+  img{
+  width: 9.5rem; /* Ancho de la imagen */
+  height: 9.5rem; /* Alto de la imagen */
+  }
+  .img-s{ /* Estilos para el escudo superior a la izquierda */
+    width: 2.8rem; /* Ancho del escudo */
+    height: 1.9rem; /* Alto del escudo */
+  }
+  #entrenadorp{ /* Estilos para el nombre del entrenador principal */
+    font-size: 1.1rem;
+  }
+  #entrenadors{ /* Estilos para el nombre del entrenador secundario */
+    font-size: 1.05rem;
+  }
+  .dorsál{ /* Estilos para el texto "dorsál" */
+    font-size: 1.1rem;
+  }
+  p { /* Estilos para los párrafos */
+    font-size: 0.7rem;
+  }
+  h1{ /* Estilos para los encabezados */
+    font-size: 0.8rem;
+  }
+  button {
+    padding: 0.5rem 1.3rem;
+    font-size: 0.5rem;
+  }
+  #imagen { /* Estilos para la imagen */
+    margin-left: 27%; /* Margen izquierdo */
+    width: 58%; /* Ancho de la imagen */
+    height: 30%; /* Alto de la imagen */
+  }
+}
+
+@media (max-width: 350px){
+  .titulo{
+    font-size: 0.95rem;
+  }
+  img{
+  width: 8.5rem; /* Ancho de la imagen */
+  height: 8.5rem; /* Alto de la imagen */
+  }
+  .img-s{ /* Estilos para el escudo superior a la izquierda */
+    width: 2.4rem; /* Ancho del escudo */
+    height: 1.5rem; /* Alto del escudo */
+  }
+  #entrenadorp{ /* Estilos para el nombre del entrenador principal */
+    font-size: 1rem;
+  }
+  #entrenadors{ /* Estilos para el nombre del entrenador secundario */
+    font-size: 0.95rem;
+  }
+  .dorsál{ /* Estilos para el texto "dorsál" */
+    font-size: 1rem;
+  }
+  p { /* Estilos para los párrafos */
+    font-size: 0.6rem;
+  }
+  h1{ /* Estilos para los encabezados */
+    font-size: 0.7rem;
+  }
+  button {
+    padding: 0.4rem 1.1rem;
+    font-size: 0.4rem;
+  }
+  #imagen { /* Estilos para la imagen */
+    margin-left: 28%; /* Margen izquierdo */
+    width: 50%; /* Ancho de la imagen */
+    height: 28%; /* Alto de la imagen */
+  }
+}
+
+@media (max-width: 310px){
+  .titulo{
+    font-size: 0.85rem;
+  }
+  img{
+  width: 7.7rem; /* Ancho de la imagen */
+  height: 7.7rem; /* Alto de la imagen */
+  }
+  .img-s{ /* Estilos para el escudo superior a la izquierda */
+    width: 2.2rem; /* Ancho del escudo */
+    height: 1.3rem; /* Alto del escudo */
+  }
+  #entrenadorp{ /* Estilos para el nombre del entrenador principal */
+    font-size: 0.8rem;
+  }
+  #entrenadors{ /* Estilos para el nombre del entrenador secundario */
+    font-size: 0.75rem;
+  }
+  .dorsál{ /* Estilos para el texto "dorsál" */
+    font-size: 0.75rem;
+  }
+  p { /* Estilos para los párrafos */
+    font-size: 0.5rem;
+  }
+  h1{ /* Estilos para los encabezados */
+    font-size: 0.6rem;
+  }
+  button {
+    padding: 0.3rem 0.9rem;
+    font-size: 0.35rem;
+  }
+  #imagen { /* Estilos para la imagen */
+    margin-left: 30%; /* Margen izquierdo */
+    width: 45%; /* Ancho de la imagen */
+    height: 25%; /* Alto de la imagen */
+  }
+}
+
+
